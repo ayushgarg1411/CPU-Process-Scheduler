@@ -1,28 +1,42 @@
-# Application Name 
+# Assignment 3: CPU Process Scheduler
 
-General descriptions of the application go here.
-
-
+This program read a list of tasks from a file and schedule them based on a desired scheduling algorithm
+The program implements the following CPU scheduling algorithms.
+1. First Come First Serve
+2. Shortest Job First
+3. Priority
+4. Round Robin
+5. Priority with Round Robin
 
 
 ## Technologies
 
-The descriptions of the technologies that are used in this application go here. It includes dependencies or pre-requisites.
-
+This code is fully developed in C programming language.
+To run a c programming you need a compiler.
+For Linux you can use GNU GCC and
+for windows Turbo C++ IDE / Dev C++ / Borland C Compiler / Code Block/ mingw etc.
+MAC users can simply compile it on terminal
 
 
 
 ## Build and Installation
-
-Instructions on how to build and install the application go here.
-
-
+use the commands below to get the appropriate result:
+make clean
+make
+make run
 
 
 ## Usage
 
-Instructions on how to run the application go here.
-
+To run the program, there is a makefile that is already designed.
+User simply need to type make to build all the dependencies;
+Then user will type make run that will give executable files to user
+ultimately our user will be having following options to run/check the program:
+>bin/fcfs resource/tasks.txt
+>bin/sjf resource/tasks.txt
+>bin/priority resource/tasks.txt
+>bin/rr resource/tasks.txt
+>bin/priority_rr resource/tasks.txt
 
 
 
@@ -30,9 +44,14 @@ Instructions on how to run the application go here.
 
 List of the contributors goes here.
 
-
+Instructor Name: Humayun Kabir
+Contributor Name: Ayush Garg
 
 
 ## License
 
-Terms and conditions or the types of licenses granted to use this application go here.
+Copyright (C) 2020, Ayush Garg
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License.
