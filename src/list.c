@@ -30,8 +30,8 @@ void insert(listnode** list, Task* task)
 	struct node* new_node = (struct node*)malloc(sizeof(struct node));
 	struct node *last = *list;
 	new_node->task = (struct task*)malloc(sizeof(struct task));
-	new_node->task->name = task->name;
-	new_node->task->priority = task->priority;
+	new_node->task->name = malloc(strlen(task->name) + 1);
+	strcpy(new_node->task->name, task->name);	new_node->task->priority = task->priority;
 	new_node->task->burst = task->burst;
 	new_node->next = NULL;
 	if(*list == NULL)
